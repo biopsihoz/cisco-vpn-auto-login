@@ -4,11 +4,13 @@ Works only on macOS
 
 1. Clone the repository and open the script `cisco-vpn-auto-login.scpt` with AppleScript Editor. 
 2. Search for `YOUR_PASSWORD_HERE` and replace it with your password. 
-3. Go to file and export it as an application marking it "Run Only".
-4. Give Accessibility permissions to this app from System Preferences > Security > Privacy > Accessibility. Click on add, browse for application and select it.
-5. Run the application to automatically login to your VPN.
-6. Since most companies have MFA, the application pauses for the user to press on YubiKey (or likewise).
-7. The press on the Yubikey should connect the user to VPN and hide the VPN window. 
+3. Search for `DUO_2ND_PASSWORD_HERE` and replace it with your 2nd password.
+4. Go to file and export it as an application marking it "Run Only".
+5. [OPTIONAL] Right click on the application > Show Package Contents > Contents > Resources. Replace `applet.icns` with your own icon file. Cisco's icon file is provided.
+6. Give Accessibility permissions to this app from System Preferences > Security > Privacy > Accessibility. Click on add, browse for application and select it.
+7. Run the application to automatically login to your VPN.
+8. Since most companies have MFA, the application pauses for the user to press on YubiKey (or likewise).
+9. The press on the Yubikey should connect the user to VPN and hide the VPN window. 
 
 **PS:** Do a manual login for the first time after installing the application to set the defaults.   
 
